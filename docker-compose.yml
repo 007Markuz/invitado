@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  mypnrhistoryapp:
+    container_name: invitado
+    image: invitado
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 80:80
